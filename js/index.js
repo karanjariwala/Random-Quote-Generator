@@ -23,6 +23,7 @@ function main() {
     $('body').css('background-color', color);
     $('#newQuote').css('color', color);
     $('#tweet').css('color', color);
+     $('body').css('color',color);
     currentQuote = post[0].content;
     currentAuthor = post[0].title;
     $('#tweet').attr('href', 'https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=' + encodeURIComponent('"' + $(currentQuote).text() + '" ' + currentAuthor));
